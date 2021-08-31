@@ -1,0 +1,11 @@
+{
+    "watch": ["src/**/*.ts"],
+    "ignore": [".git", "node_modules", "*.test.ts"],
+    "exec": "ts-node src/app.ts",
+    "execMap": {
+      "ts": "typescript"
+    },
+    "env": {
+      "NODE_ENV": "development"
+    }
+  }

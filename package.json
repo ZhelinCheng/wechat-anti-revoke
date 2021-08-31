@@ -1,0 +1,65 @@
+{
+  "name": "wechat-anti-revoke",
+  "version": "1.0.0",
+  "description": "微信防撤回机器人，将撤回消息发送至文件助手。",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon -e ts, js",
+    "build": "npm run lint && rimraf dist && tsc",
+    "format": "prettier --write ./src/**/*.ts",
+    "lint": "eslint ./src/**/*.ts --ext .ts",
+    "prepare-commit-msg": "prepare-commit-msg",
+    "prepare": "husky install",
+    "commitlint": "commitlint",
+    "lint-staged": "lint-staged",
+    "test": "jest --forceExit --verbose --detectOpenHandles --coverage",
+    "watch-test": "npm run test -- --watchAll",
+    "puppet-install": "node node_modules/.bin/wechaty-puppet-install",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "lint-staged": {
+    "./src/*.ts": [
+      "prettier --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhelinCheng/wechat-anti-revoke.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhelinCheng/wechat-anti-revoke/issues"
+  },
+  "homepage": "https://github.com/ZhelinCheng/wechat-anti-revoke#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "commitlint": "^13.1.0",
+    "conventional-changelog-conventionalcommits": "^4.6.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@types/pino": "^6.3.11",
+    "@types/qrcode-terminal": "^0.12.0",
+    "dotenv": "^10.0.0",
+    "pino": "^6.13.1",
+    "pino-pretty": "^6.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^0.68.1",
+    "wechaty-puppet-wechat": "^0.28.4"
+  }
+}

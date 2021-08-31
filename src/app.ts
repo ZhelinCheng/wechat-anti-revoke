@@ -2,7 +2,7 @@
  * @Author       : Zhelin Cheng
  * @Date         : 2021-08-31 16:21:44
  * @LastEditors  : Zhelin Cheng
- * @LastEditTime : 2021-08-31 22:53:44
+ * @LastEditTime : 2021-08-31 22:55:47
  * @FilePath     : \wechat-anti-revoke\src\app.ts
  * @Description  : 未添加文件描述
  */
@@ -45,7 +45,7 @@ async function main() {
         if (contact && recalledType !== 6) {
           const sendMsg = `时间：${dayjs().format(
             'MM-DD hh:mm:ss',
-          )} \n账号: ${contact.name()}\n信息: ${text}`;
+          )} \n账号：${contact.name()}\n信息：${text}`;
 
           const senUser = await bot.Contact.find({
             id: 'filehelper',

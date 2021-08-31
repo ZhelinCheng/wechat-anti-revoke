@@ -2,13 +2,14 @@
  * @Author       : Zhelin Cheng
  * @Date         : 2021-08-31 16:21:44
  * @LastEditors  : Zhelin Cheng
- * @LastEditTime : 2021-08-31 21:07:09
- * @FilePath     : /wechat-anti-revoke/src/app.ts
+ * @LastEditTime : 2021-08-31 22:50:31
+ * @FilePath     : \wechat-anti-revoke\src\app.ts
  * @Description  : 未添加文件描述
  */
 
 import dotenv from 'dotenv';
 import { resolve } from 'path';
+import dayjs from 'dayjs';
 import { Wechaty, Contact, Message, ScanStatus } from 'wechaty';
 import { logger } from './utils';
 import QrCode from 'qrcode-terminal';
@@ -42,7 +43,9 @@ async function main() {
 
         // 忽略图片撤回
         if (contact && recalledType !== 6) {
-          const sendMsg = `=== 撤回信息 === \n账号: ${contact.name()}\n信息: ${text}`;
+          const sendMsg = `时间：${dayjs().format(
+            'YYYY-MM-DD hh:mm:ss',
+          )} \n账号: ${contact.name()}\n信息: ${text}`;
 
           const senUser = await bot.Contact.find({
             id: 'filehelper',

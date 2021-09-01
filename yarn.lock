@@ -3929,10 +3929,10 @@ jest-worker@^27.1.0:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^27.1.0:
+jest@27.1.0:
   version "27.1.0"
-  resolved "https://registry.nlark.com/jest/download/jest-27.1.0.tgz#eaab62dfdc02d8b7c814cd27b8d2d92bc46d3d69"
-  integrity sha1-6qti39wC2LfIFM0nuNLZK8RtPWk=
+  resolved "https://registry.yarnpkg.com/jest/-/jest-27.1.0.tgz#eaab62dfdc02d8b7c814cd27b8d2d92bc46d3d69"
+  integrity sha512-pSQDVwRSwb109Ss13lcMtdfS9r8/w2Zz8+mTUA9VORD66GflCdl8nUFCqM96geOD2EBwWCNURrNAfQsLIDNBdg==
   dependencies:
     "@jest/core" "^27.1.0"
     import-local "^3.0.2"

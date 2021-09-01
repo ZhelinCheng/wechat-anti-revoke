@@ -2001,10 +2001,10 @@ commander@^7.2.0:
   resolved "https://registry.nlark.com/commander/download/commander-7.2.0.tgz?cache=0&sync_timestamp=1627358254258&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
 
-commitlint@^13.1.0:
+commitlint@13.1.0:
   version "13.1.0"
-  resolved "https://registry.nlark.com/commitlint/download/commitlint-13.1.0.tgz#67b8f5a1acac0c14b93f341b82b00898e1b90b90"
-  integrity sha1-Z7j1oaysDBS5PzQbgrAImOG5C5A=
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-13.1.0.tgz#67b8f5a1acac0c14b93f341b82b00898e1b90b90"
+  integrity sha512-bDqtADmdT79zO/qYmROk+kMkUxF30vP0vBrdm4ceuMLoJSi8JBZZiS+uEFb71yJmZsiDML/258Othrc1g773sA==
   dependencies:
     "@commitlint/cli" "^13.1.0"
     "@commitlint/types" "^13.1.0"

@@ -18,7 +18,7 @@
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "lint-staged": {
-    "./src/*.ts": [
+    "./src/**/*.ts": [
       "prettier --write",
       "yarn lint",
       "git add"
@@ -28,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/ZhelinCheng/wechat-anti-revoke.git"
   },
-  "keywords": [],
+  "keywords": ["微信防撤回", "wechat"],
   "author": "",
   "license": "MIT",
   "bugs": {

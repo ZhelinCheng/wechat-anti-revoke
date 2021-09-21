@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/ZhelinCheng/wechat-anti-revoke#readme",
   "devDependencies": {
-    "@types/jest": "27.0.1",
+    "@types/jest": "27.0.2",
     "@typescript-eslint/eslint-plugin": "4.30.0",
     "@typescript-eslint/parser": "4.30.0",
     "commitlint": "13.1.0",
